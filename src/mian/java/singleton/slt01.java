@@ -7,6 +7,7 @@ public class slt01 {
     private static final slt01 instance=new slt01();
     private slt01(){};
     public static slt01 getIntance(){
+        String n = 3;
         return instance;
     }
 
