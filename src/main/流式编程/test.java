@@ -34,6 +34,12 @@ public class test {
         for (int[] pair : pairs) {
             System.out.println(Arrays.toString(pair));
         }
+        // Êä³ö£ºxcbeyondNikiXiaoMing³¬¸çĞ¡°×Ğ¡ºìLucyLily³¬¼¶·ÉÏÀÀÖµÏ
+        String namesStr1 = computerClub.stream().map(Student::getName).collect(Collectors.joining());
+        // Êä³ö£ºxcbeyond,Niki,XiaoMing,³¬¸ç,Ğ¡°×,Ğ¡ºì,Lucy,Lily,³¬¼¶·ÉÏÀ,ÀÖµÏ
+        String namesStr2 = computerClub.stream().map(Student::getName).collect(Collectors.joining(","));
+        // Êä³ö£º[xcbeyond,Niki,XiaoMing,³¬¸ç,Ğ¡°×,Ğ¡ºì,Lucy,Lily,³¬¼¶·ÉÏÀ,ÀÖµÏ]
+        String namesStr3 = computerClub.stream().map(Student::getName).collect(Collectors.joining(",", "[", "]"));
 
     }
 

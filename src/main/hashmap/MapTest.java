@@ -19,7 +19,6 @@ public class MapTest {
         stringObjectHashMap1.put("b",list);
         stringObjectHashMap.putAll(stringObjectHashMap1);
         System.out.println(stringObjectHashMap);
-
-
+        System.out.println("ÁôÏÂÀ´");
     }
 }
