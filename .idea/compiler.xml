@@ -2,6 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="fileupdown" target="1.8" />
+      <module name="fileupdown.main" target="1.8" />
+      <module name="fileupdown.test" target="1.8" />
       <module name="nacos-example" target="1.8" />
       <module name="nacos-examples" target="1.8" />
       <module name="nacos-examples.main" target="1.8" />

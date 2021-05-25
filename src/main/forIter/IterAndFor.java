@@ -1,9 +1,6 @@
 package main.forIter;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.ListIterator;
+import java.util.*;
 
 /**
  * @author ：liugeng
@@ -26,9 +23,12 @@ public class IterAndFor {
         list.add("4");
         list.add("2");
         list.add("6");
+        list.set(2,"44");
+
+        System.out.println(Arrays.toString(list.toArray()));
 //        fors(list);
 //        foreachs(list);
-        iterators(list);
+//        iterators(list);
 //        listIterators(list);
 //        mapIterator(map);
     }
