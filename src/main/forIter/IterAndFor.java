@@ -24,7 +24,7 @@ public class IterAndFor {
         list.add("2");
         list.add("6");
         list.set(2,"44");
-
+        System.out.println("nihao ");
         System.out.println(Arrays.toString(list.toArray()));
 //        fors(list);
 //        foreachs(list);
