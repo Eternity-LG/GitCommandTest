@@ -1,9 +1,9 @@
 package main.threads;
 
-public class test implements Runnable{
+public class test implements Runnable {
 
-        @Override
-        public void run() {
-            System.out.println("test中的runnable");
-        }
+    @Override
+    public void run() {
+        System.out.println("test中的runnable");
     }
+}

@@ -8,7 +8,7 @@ import org.antlr.v4.runtime.tree.TerminalNode;
  * @author ：liugeng
  * @date ：Created in 2021/4/13 17:26
  */
-public class ShortToUnicodeString implements ArrayInitListener{
+public class ShortToUnicodeString implements ArrayInitListener {
     @Override
     public void enterInit(ArrayInitParser.InitContext ctx) {
         System.out.print('"');
@@ -22,7 +22,7 @@ public class ShortToUnicodeString implements ArrayInitListener{
     @Override
     public void enterValue(ArrayInitParser.ValueContext ctx) {
         int value = Integer.valueOf(ctx.INT().getText());
-        System.out.printf("\\u%04x",value);
+        System.out.printf("\\u%04x", value);
     }
 
     @Override

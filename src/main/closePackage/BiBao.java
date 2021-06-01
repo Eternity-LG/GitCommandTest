@@ -1,4 +1,4 @@
-package main.±Õ°ü;
+package main.closePackage;
 
 public class BiBao {
     public static void main(String[] args) {

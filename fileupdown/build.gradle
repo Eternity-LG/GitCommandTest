@@ -3,9 +3,6 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
 }
-test{
-    SystemProperties 'property':'string'
-}
 
 group = 'cn.com.agree.utils'
 version = '0.0.1-SNAPSHOT'
@@ -41,7 +38,7 @@ task0.dependsOn task1,task2,hello
 
 task loadFile{
     def files = file("./src/test").listFiles().sort();
-    files.each {File file ->
+    files.each {file ->
         if (file.isFile()){
             ant.loadfile(srcFile(file.name),property:file.name)
             println("******$file.name****")

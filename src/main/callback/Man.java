@@ -8,6 +8,7 @@ import java.util.concurrent.Callable;
  */
 public class Man implements Callable {
     Woman woman;
+
     public Man(Woman woman) {
         this.woman = woman;
     }

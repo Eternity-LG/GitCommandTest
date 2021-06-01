@@ -21,18 +21,18 @@ public class Digits {
         System.out.println("number[0].compareTo(number[1]):" + number[0].compareTo(number[2]));
         //获取该枚举对象的Class对象引用,当然也可以通过getClass方法
         Class<NUMBER> clazz = number[0].getDeclaringClass();
-        System.out.println("clazz:"+clazz);
+        System.out.println("clazz:" + clazz);
         System.out.println("-------------------------------------");
         //name
-        System.out.println("days[0].name():"+number[0].name());
-        System.out.println("days[1].name():"+number[1].name());
-        System.out.println("days[2].name():"+number[2].name());
+        System.out.println("days[0].name():" + number[0].name());
+        System.out.println("days[1].name():" + number[1].name());
+        System.out.println("days[2].name():" + number[2].name());
 
         System.out.println("-------------------------------------");
 
-        System.out.println("days[0].toString():"+number[0].toString());
-        System.out.println("days[1].toString():"+number[1].toString());
-        System.out.println("days[2].toString():"+number[2].toString());
+        System.out.println("days[0].toString():" + number[0].toString());
+        System.out.println("days[1].toString():" + number[1].toString());
+        System.out.println("days[2].toString():" + number[2].toString());
 
         System.out.println("-------------------------------------");
 

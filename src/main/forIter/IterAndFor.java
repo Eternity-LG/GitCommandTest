@@ -10,12 +10,12 @@ public class IterAndFor {
 
     public static void main(String[] args) {
         HashMap<String, String> map = new HashMap<>();
-        map.put("1","11");
-        map.put("2","11");
-        map.put("3","11");
-        map.put("4","11");
-        map.put("5","11");
-        map.put("6","11");
+        map.put("1", "11");
+        map.put("2", "11");
+        map.put("3", "11");
+        map.put("4", "11");
+        map.put("5", "11");
+        map.put("6", "11");
         ArrayList<String> list = new ArrayList<>();
         list.add("1");
         list.add("2");
@@ -23,7 +23,7 @@ public class IterAndFor {
         list.add("4");
         list.add("2");
         list.add("6");
-        list.set(2,"44");
+        list.set(2, "44");
         System.out.println("nihao ");
         System.out.println(Arrays.toString(list.toArray()));
 //        fors(list);
@@ -35,8 +35,8 @@ public class IterAndFor {
 
     private static void mapIterator(HashMap<String, String> map) {
         for (String s : map.keySet()) {
-            if (s.equals("1")){
-                map.put("22","erwer");
+            if (s.equals("1")) {
+                map.put("22", "erwer");
                 map.remove("1");
             }
 
@@ -47,15 +47,15 @@ public class IterAndFor {
         //ListIterator
         ListIterator<String> it = list.listIterator();
         System.out.println("由前向后遍历：");
-        while(it.hasNext()){
+        while (it.hasNext()) {
             String str = it.next();
             it.set("test");
-            System.out.print(str+" ");
+            System.out.print(str + " ");
         }
         System.out.println("由后向前遍历：");            //如果想输出有后向前必须先进行有钱向后
-        while(it.hasPrevious()){
+        while (it.hasPrevious()) {
             String str = it.previous();
-            System.out.print(str+" ");
+            System.out.print(str + " ");
         }
 
     }
@@ -64,7 +64,7 @@ public class IterAndFor {
     private static void iterators(ArrayList<String> list) {
         //Iterator
         Iterator<String> iterator = list.iterator();
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             String val = iterator.next();
             if (val.equals("2")) {
                 iterator.remove(); //报错

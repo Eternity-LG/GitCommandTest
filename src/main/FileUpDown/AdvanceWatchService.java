@@ -45,10 +45,10 @@ public class AdvanceWatchService {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-                        for (WatchEvent event:key.pollEvents()){
+                        for (WatchEvent event : key.pollEvents()) {
                             Path file2 = (Path) event.context();
                             String str = file2.toFile().getAbsolutePath();
-                            System.out.println(str+" "+event.kind().toString());
+                            System.out.println(str + " " + event.kind().toString());
 
                         }
                         key.reset();

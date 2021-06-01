@@ -1,5 +1,6 @@
 // Generated from D:/IdeaProjects/设计模式/src/main/graphql\ArrayInit.g4 by ANTLR 4.9.1
 package main.graphql;
+
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -7,24 +8,31 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  * {@link ArrayInitParser}.
  */
 public interface ArrayInitListener extends ParseTreeListener {
-	/**
-	 * Enter a parse tree produced by {@link ArrayInitParser#init}.
-	 * @param ctx the parse tree
-	 */
-	void enterInit(ArrayInitParser.InitContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ArrayInitParser#init}.
-	 * @param ctx the parse tree
-	 */
-	void exitInit(ArrayInitParser.InitContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link ArrayInitParser#value}.
-	 * @param ctx the parse tree
-	 */
-	void enterValue(ArrayInitParser.ValueContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ArrayInitParser#value}.
-	 * @param ctx the parse tree
-	 */
-	void exitValue(ArrayInitParser.ValueContext ctx);
+    /**
+     * Enter a parse tree produced by {@link ArrayInitParser#init}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterInit(ArrayInitParser.InitContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link ArrayInitParser#init}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitInit(ArrayInitParser.InitContext ctx);
+
+    /**
+     * Enter a parse tree produced by {@link ArrayInitParser#value}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterValue(ArrayInitParser.ValueContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link ArrayInitParser#value}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitValue(ArrayInitParser.ValueContext ctx);
 }

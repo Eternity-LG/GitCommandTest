@@ -8,7 +8,7 @@ import java.util.concurrent.Callable;
  */
 public class Woman {
 
-    public void wc(Callable callable){
+    public void wc(Callable callable) {
         try {
             System.out.println("我得5s");
             Thread.sleep(5000);

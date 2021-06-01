@@ -1,6 +1,7 @@
 package main.annotions;
 
 import java.lang.annotation.*;
+
 @Documented
 @Inherited
 @Target(ElementType.TYPE)

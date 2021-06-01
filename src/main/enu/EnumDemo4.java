@@ -2,8 +2,8 @@ package main.enu;
 
 public class EnumDemo4 {
 
-    public static void printName(Color color){
-        switch (color){
+    public static void printName(Color color) {
+        switch (color) {
             case BLUE: //无需使用Color进行引用
                 System.out.println("蓝色");
                 break;
@@ -16,7 +16,7 @@ public class EnumDemo4 {
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         printName(Color.BLUE);
         printName(Color.RED);
         printName(Color.GREEN);
@@ -25,7 +25,8 @@ public class EnumDemo4 {
         //红色
         //绿色
     }
-    enum Color{
-        BLUE,RED,GREEN
+
+    enum Color {
+        BLUE, RED, GREEN
     }
 }

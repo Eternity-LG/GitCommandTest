@@ -9,7 +9,7 @@ import org.antlr.v4.runtime.tree.TerminalNode;
  * @author ：liugeng
  * @date ：Created in 2021/4/14 9:36
  */
-public class ShortToUnicodeStringVisitor implements ArrayInitVisitor{
+public class ShortToUnicodeStringVisitor implements ArrayInitVisitor {
     @Override
     public Object visitInit(ArrayInitParser.InitContext ctx) {
         return null;

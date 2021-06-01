@@ -1,5 +1,6 @@
 // Generated from D:/IdeaProjects/设计模式/src/main/graphql\ArrayInit.g4 by ANTLR 4.9.1
 package main.graphql;
+
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -7,19 +8,22 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  * by {@link ArrayInitParser}.
  *
  * @param <T> The return type of the visit operation. Use {@link Void} for
- * operations with no return type.
+ *            operations with no return type.
  */
 public interface ArrayInitVisitor<T> extends ParseTreeVisitor<T> {
-	/**
-	 * Visit a parse tree produced by {@link ArrayInitParser#init}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitInit(ArrayInitParser.InitContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link ArrayInitParser#value}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitValue(ArrayInitParser.ValueContext ctx);
+    /**
+     * Visit a parse tree produced by {@link ArrayInitParser#init}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitInit(ArrayInitParser.InitContext ctx);
+
+    /**
+     * Visit a parse tree produced by {@link ArrayInitParser#value}.
+     *
+     * @param ctx the parse tree
+     * @return the visitor result
+     */
+    T visitValue(ArrayInitParser.ValueContext ctx);
 }

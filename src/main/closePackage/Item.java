@@ -1,4 +1,4 @@
-package main.±Õ°ü;
+package main.closePackage;
 
 public class Item {
     private int id;

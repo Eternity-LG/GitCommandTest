@@ -28,7 +28,7 @@ public class Process implements Callable {
             return null;
         } else if (read == 0) {
             return null;
-        }else{
+        } else {
             System.out.println("Received message" + new String(byteBuffer.array()));
             System.out.println("current thread" + Thread.currentThread().toString());
         }

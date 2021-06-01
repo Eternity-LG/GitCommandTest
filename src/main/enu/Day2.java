@@ -13,14 +13,16 @@ public enum Day2 {
 
     /**
      * 私有构造,防止被外部调用
+     *
      * @param desc
      */
-    private Day2(String desc){
-        this.desc=desc;
+    private Day2(String desc) {
+        this.desc = desc;
     }
 
     /**
      * 覆盖
+     *
      * @return
      */
     @Override
@@ -29,10 +31,10 @@ public enum Day2 {
     }
 
 
-    public static void main(String[] args){
-        for (Day2 day:Day2.values()) {
-            System.out.println("name:"+day.name()+
-                    ",desc:"+day.toString());
+    public static void main(String[] args) {
+        for (Day2 day : Day2.values()) {
+            System.out.println("name:" + day.name() +
+                    ",desc:" + day.toString());
         }
     }
 

@@ -15,20 +15,21 @@ public class FileDownload {
     public static void main(String[] args) throws IOException {
         HttpServletResponse response = null;
         new FileDownload().fileDown2(response);
-        new FileDownload().fileDown1("D:/test.txt",response);
+        new FileDownload().fileDown1("D:/test.txt", response);
     }
+
     //给定文件的下载路径
     public HttpServletResponse fileDown1(String path, HttpServletResponse response) throws IOException {
         File file = new File(path);
         String fileName = file.getName();
-        String ext = fileName.substring(fileName.indexOf(".")+1).toUpperCase(Locale.ROOT);
+        String ext = fileName.substring(fileName.indexOf(".") + 1).toUpperCase(Locale.ROOT);
         InputStream fis = new BufferedInputStream(new FileInputStream(path));
         byte[] buffer = new byte[fis.available()];
         fis.read(buffer);
         fis.close();
         response.reset();
-        response.addHeader("Content-Disposition","attachName;fileName"+new String(fileName.getBytes()));
-        response.addHeader("Content-length",""+file.length());
+        response.addHeader("Content-Disposition", "attachName;fileName" + new String(fileName.getBytes()));
+        response.addHeader("Content-length", "" + file.length());
         OutputStream ois = new BufferedOutputStream(response.getOutputStream());
         response.setContentType("application/octet-stream");
         ois.write(buffer);
@@ -36,24 +37,26 @@ public class FileDownload {
         ois.close();
         return response;
     }
+
     //从本地下载文件
-    public  void fileDown2(HttpServletResponse response) throws FileNotFoundException {
+    public void fileDown2(HttpServletResponse response) throws FileNotFoundException {
         String fileName = "test.txt".toString();
         FileInputStream fis = new FileInputStream("D:/test.txt");
         response.reset();
         response.setContentType("bin");
-        response.setHeader("Content-Disposition","attachment;filename\""+fileName+"\"");
-        byte[] b =new byte[100];
+        response.setHeader("Content-Disposition", "attachment;filename\"" + fileName + "\"");
+        byte[] b = new byte[100];
         int len;
-        try{
-            while ((len = fis.read(b))>0){
-                response.getOutputStream().write(b,0,len);
+        try {
+            while ((len = fis.read(b)) > 0) {
+                response.getOutputStream().write(b, 0, len);
 
             }
             fis.close();
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
-        } ;
+        }
+        ;
     }
 
     //从网络上下载文件
@@ -70,10 +73,10 @@ public class FileDownload {
             FileOutputStream fos = new FileOutputStream("D:/abc.gif");
             byte[] buffer = new byte[1024];
             int len;
-            while ((byteread=is.read(buffer))!=-1){
-                bytesum +=byteread;
+            while ((byteread = is.read(buffer)) != -1) {
+                bytesum += byteread;
                 System.out.println(bytesum);
-                fos.write(buffer,0,byteread);
+                fos.write(buffer, 0, byteread);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

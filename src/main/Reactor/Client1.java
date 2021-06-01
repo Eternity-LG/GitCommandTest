@@ -23,7 +23,7 @@ public class Client1 {
             while (buffer.hasRemaining()) {
                 socketChannel.write(buffer);
             }
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         socketChannel.close();

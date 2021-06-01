@@ -1,4 +1,4 @@
-package main.流式编程;
+package main.stream;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -29,7 +29,7 @@ public class test {
         List<Integer> numbers1 = Arrays.asList(1, 2, 3);
         List<Integer> numbers2 = Arrays.asList(3, 4);
         // flatMap升维度
-        List<int[]> pairs = numbers1.stream().flatMap(x -> numbers2.stream().map(y -> new int[] { x, y }))
+        List<int[]> pairs = numbers1.stream().flatMap(x -> numbers2.stream().map(y -> new int[]{x, y}))
                 .collect(Collectors.toList());
         for (int[] pair : pairs) {
             System.out.println(Arrays.toString(pair));
